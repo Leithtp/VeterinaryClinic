@@ -1,0 +1,21 @@
+﻿@using VeterinaryClinic.Models;
+@model EmailViewModel
+@{
+
+    Layout = "_Layout";
+
+}
+
+<div class="content">
+    <form asp-area="" asp-controller="Home" asp-action="ContactUs" method="post">
+        <h2>Связаться с нами</h2>
+        <label>Ваш email</label>
+        <input type="text" name="email" />
+        <label>Тема письма</label>
+        <input type="text" name="subject" />
+        <label>Текст письма</label>
+        <textarea name="text"></textarea>
+        </br>
+        <input class="button big" type="submit" value="Отправить" />
+    </form>
+</div>

@@ -1,0 +1,23 @@
+﻿@{
+
+    Layout = "_Layout";
+
+}
+
+<section id="banner">
+    <div class="content">
+        <header>
+            <h1>
+                Рады вас приветствовать<br />
+            </h1>
+            <p>На сайте ветеринарной клиники 4 лапы</p>
+        </header>
+        <p>Лечим, спасаем и заботимся круглосуточно</p>
+        <ul class="actions">
+            <li><input class="button big" type="button" value="Запись" onclick="window.location.href='@Url.Action("RegistrationForTheService", "Home")';" /></li>
+        </ul>
+    </div>
+    <span class="image object">
+        <img src="images/sobaka-i-koshka.jpg" alt="" />
+    </span>
+</section>

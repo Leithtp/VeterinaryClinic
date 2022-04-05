@@ -1,0 +1,64 @@
+﻿<div id="sidebar">
+    <div class="inner">
+
+        <!-- Search -->
+        <section id="search" class="alt">
+            <form method="post" action="#">
+                <input type="text" name="query" id="query" placeholder="Поиск" />
+            </form>
+        </section>
+
+        <!-- Menu -->
+        <nav id="menu">
+            <header class="major">
+                <h2>Меню</h2>
+            </header>
+            <ul>
+                <li><a asp-area="" asp-action="Index" asp-controller="Home">Домашнаяя страница</a></li>
+                <li><a asp-area="" asp-action="Index" asp-controller="Home">Личный кабинет</a></li>
+                <li><a asp-area="" asp-action="Index" asp-controller="Home">Прайс</a></li>
+                <li><a asp-area="" asp-action="Index" asp-controller="Home">Отзывы</a></li>
+                <li>@Html.ActionLink("Написать нам", "ContactUs", "Home")</li>
+                <li><a asp-area="" asp-action="Index" asp-controller="Home">Наши специалисты</a></li>
+
+            </ul>
+        </nav>
+
+        <!-- Section -->
+        <section>
+            <header class="major">
+                <h2>Новости</h2>
+            </header>
+            <div class="mini-posts">
+                <!--<article>
+                    <a href="#" class="image"><img src="images/16190737327361.jpg" alt="" /></a>
+                    <p>Открытие новой клинике по адресу пр. Космонавтов 51</p>
+                </article> -->
+                <!--TODO здесь в цикле будут выводиться последние новости-->
+            </div>
+            <ul class="actions">
+                <li><a href="#" class="button">Больше</a></li>
+            </ul>
+        </section>
+
+        <!-- Section -->
+        <section>
+            <header class="major">
+                <h2>Контакты</h2>
+            </header>
+            <ul class="contact">
+                <li class="icon solid fa-envelope"><a href="#">info@fourpaws.com</a></li>
+                <li class="icon solid fa-phone">8 (343) 44-2200</li>
+                <li class="icon solid fa-home">
+                    <strong> г. Екатеринбург</strong> </br>
+                    пр. Космонавтов 51 </br>
+                    ул. Ленина 101/2 </br>
+                    ул. Комсомольская 15А
+                </li>
+            </ul>
+        </section>
+
+
+
+    </div>
+</div>

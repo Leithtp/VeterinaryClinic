@@ -1,0 +1,43 @@
+﻿<!DOCTYPE HTML>
+
+<html>
+<head>
+    <title>Editorial by HTML5 UP</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    @await Html.PartialAsync("CssPartial");
+</head>
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+
+                <!-- Header -->
+                @await Html.PartialAsync("Header");
+
+                <!-- Banner -->
+
+                @RenderBody()
+                <!-- SectionFeatures -->
+
+
+                <!-- SectionPosts -->
+
+
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        @await Html.PartialAsync("SideBar");
+
+    </div>
+
+    <!-- Scripts -->
+    @await Html.PartialAsync("Script");
+
+</body>
+</html>
